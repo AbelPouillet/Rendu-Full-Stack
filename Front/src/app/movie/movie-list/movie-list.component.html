@@ -1,0 +1,2 @@
+<app-movie-item (deleteClick)="onDelete()" *ngFor="let item of items" [item]="item"></app-movie-item>
+<a mat-raised-button [routerLink]="['edit']"  color="accent"> Ajouter </a>

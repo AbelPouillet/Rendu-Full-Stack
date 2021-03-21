@@ -1,0 +1,12 @@
+[
+  {
+    "firstName": "Harry",
+    "lastName": "Potter",
+    "birthYear": 1990
+  },
+  {
+    "firstName": "Bilbo",
+    "lastName": "Baggins",
+    "birthYear": 1900
+  }
+]

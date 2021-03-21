@@ -1,0 +1,18 @@
+<mat-chip-list>
+  <mat-chip selected color="primary"
+            (click)="onAttributeClick(CharacterItemAttribute.firstName)">
+    {{ item?.firstName || 'John' }}
+  </mat-chip>
+  <mat-chip selected color="accent"
+            (click)="onAttributeClick(CharacterItemAttribute.lastName)">
+    {{ item?.lastName || 'Doe' }}
+  </mat-chip>
+  <mat-chip selected color="warn"
+            (click)="onAttributeClick(CharacterItemAttribute.birthYear)">
+    {{ item?.birthYear || 1970 }}
+  </mat-chip>
+  <button (click)="delete()">
+    <mat-icon >delete</mat-icon>
+  </button>
+  <mat-icon routerLink="/characters/edit/{{item._id}}">edit</mat-icon>
+</mat-chip-list>
